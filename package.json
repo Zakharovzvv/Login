@@ -48,7 +48,7 @@
     "axios": "^0.19.2",
     "bootstrap": "^5.0.0-alpha1"
   },
-  "hasky": {
+  "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
