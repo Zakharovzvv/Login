@@ -14,10 +14,8 @@ export async function login(email, password) {
 			{
 			},
 		);
-		console.log(response);
 		return response.data;
 	} catch (e) {
-		console.log(e);
 		return Promise.reject(e);
 	}
 }

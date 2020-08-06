@@ -37,6 +37,20 @@
                                            data-required="password"
                                            data-invalid-message="Please provide valid password (numbers, small letters, big letters, >4 signs)">
                                 </div>
+                                <div class="mb-3 div-country">
+                                    <label for="inputCountry" class="form-label">Country</label>
+                                    <input type="text" class="form-control" id="inputCountry"
+                                           data-required="country"
+                                           data-invalid-message="Please choose a country">
+                                    <div class="list-group country-list"></div>
+                                </div>
+                                <div class="mb-3 div-city">
+                                    <label for="inputCity" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="inputCity"
+                                           data-required="city"
+                                           data-invalid-message="Please choose a city" disabled>
+                                    <div class="list-group city-list"></div>
+                                </div>
                                 <div class="mb-3 form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
