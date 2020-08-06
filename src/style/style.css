@@ -1,17 +1,55 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "./node_modules/bootstrap/scss/bootstrap"
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   style.sass 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"./node_modules/bootstrap/scss/bootstrap\"\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   style.sass 1:9  root stylesheet";
+* {
+  box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  position: relative;
+}
+
+.row {
+  height: 100%;
+}
+
+.notify-container {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+.div-country {
+  position: relative;
+}
+
+.div-city {
+  position: relative;
+}
+
+.country-list {
+  position: absolute;
+  z-index: 1000;
+}
+
+.city-list {
+  position: absolute;
+  z-index: 1000;
+}
+
+/*# sourceMappingURL=style.css.map */

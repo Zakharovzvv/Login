@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+</head>
+<body>
+<div class="main-container">
+    <header class="header">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Validation sample</span>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Please Login</h4>
+                            <form name="loginForm" class="row g-2 needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="inputEmail" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="inputEmail"
+                                           aria-describedby="emailHelp" data-required="email"
+                                           data-invalid-message="Please provide valid email example@example.com">
+                                    <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                        else.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="inputPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword"
+                                           data-required="password"
+                                           data-invalid-message="Please provide valid password (numbers, small letters, big letters, >4 signs)">
+                                </div>
+                                <div class="mb-3 div-country">
+                                    <label for="inputCountry" class="form-label">Country</label>
+                                    <input type="text" class="form-control" id="inputCountry"
+                                           data-required="country"
+                                           data-invalid-message="Please choose a country">
+                                    <div class="list-group country-list"></div>
+                                </div>
+                                <div class="mb-3 div-city">
+                                    <label for="inputCity" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="inputCity"
+                                           data-required="city"
+                                           data-invalid-message="Please choose a city" disabled>
+                                    <div class="list-group city-list"></div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Submit form</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notify-container">
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="navbar navbar-light bg-light container-fluid bg-light">
+            <span class="navbar-brand mb-0 h6">Copyright 2020</span>
+        </div>
+
+    </footer>
+</div>
+<script src="polyfill.584c73cae19ba08d9dec.js"></script><script src="app.584c73cae19ba08d9dec.js"></script></body>
+</html>
